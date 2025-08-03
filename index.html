@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoshine Services</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .nav-link.active {
+            color: #2563eb; /* blue-600 */
+            font-weight: 600;
+        }
+        .page-section {
+            display: none;
+        }
+        .page-section.active {
+            display: block;
+        }
+        .testimonial-card {
+            background-color: white;
+            border-left: 4px solid #2563eb; /* blue-600 */
+        }
+        .plan-card.best-value {
+            border-color: #f59e0b; /* amber-500 */
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2 page-link">
+                <img src="./images/logo/logo.png" alt="Ecoshine Services Logo" class="h-10 w-auto">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link page-link active">Home</a>
+                <a href="#about" class="nav-link page-link">About</a>
+                <a href="#services" class="nav-link page-link">Services</a>
+                <a href="#contact" class="nav-link page-link">Contact</a>
+            </div>
+            <a href="#appointment" class="hidden md:inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300 page-link">Book Now</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#home" class="block py-3 px-6 text-center page-link nav-link active">Home</a>
+            <a href="#about" class="block py-3 px-6 text-center page-link nav-link">About Us</a>
+            <a href="#services" class="block py-3 px-6 text-center page-link nav-link">Our Services</a>
+            <a href="#contact" class="block py-3 px-6 text-center page-link nav-link">Contact Us</a>
+            <div class="p-4">
+                 <a href="#appointment" class="block w-full bg-blue-600 text-white font-semibold px-5 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-center page-link">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Page Section -->
+        <section id="home" class="page-section active">
+            <!-- Hero Section -->
+            <div class="bg-blue-50">
+                <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">Pristine Cleaning, Right at Your Doorstep.</h1>
+                    <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">EcoShine offers professional, eco-friendly cleaning for your solar panels, vehicles, and water tanks. Experience the shine of true clean.</p>
+                    <a href="#services" class="mt-10 inline-block bg-blue-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 page-link">Explore Our Services</a>
+                </div>
+            </div>
+
+            <!-- Services Overview Section -->
+            <div class="container mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold text-center mb-12">What We Clean</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Solar Panel Cleaning -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Solar Panel Cleaning</h3>
+                        <p class="text-gray-600">Boost your energy efficiency with our streak-free solar panel cleaning service.</p>
+                    </div>
+                    <!-- Car Wash -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Doorstep Car Wash</h3>
+                        <p class="text-gray-600">Get a showroom shine without leaving your home. We bring the car wash to you.</p>
+                    </div>
+                    <!-- Tank Cleaning -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Water Tank Cleaning</h3>
+                        <p class="text-gray-600">Ensure your family's health with our hygienic and thorough water tank cleaning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Quote Section -->
+            <div class="bg-slate-100">
+                <div class="container mx-auto px-6 py-16">
+                    <div class="text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">Get a Quick Quote</h2>
+                        <p class="mt-4 text-lg text-gray-600">Select a service and plan to see your estimated price instantly.</p>
+                    </div>
+                    <div class="mt-12 max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6">
+                        <div>
+                            <label for="home-appointment-service" class="block text-sm font-medium text-gray-700">Select Service</label>
+                            <select id="home-appointment-service" name="service" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white">
+                                <option>Car Wash (Exterior)</option>
+                                <option>Car Wash (Interior)</option>
+                                <option>Car Wash (Both)</option>
+                                <option>Bike Wash</option>
+                                <option>Solar Panel Cleaning</option>
+                                <option>Water Tank Cleaning</option>
+                            </select>
+                        </div>
+                        <div id="home-panel-quantity-section" class="hidden">
+                            <label for="home-panel-quantity" class="block text-sm font-medium text-gray-700">Number of Panels</label>
+                            <input type="number" name="panel-quantity" id="home-panel-quantity" min="1" value="1" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                         <div id="home-tank-capacity-section" class="hidden">
+                            <label for="home-tank-capacity" class="block text-sm font-medium text-gray-700">Water Tank Capacity (in Liters)</label>
+                            <input type="number" name="tank-capacity" id="home-tank-capacity" min="500" value="1000" step="100" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="home-subscription-plan" class="block text-sm font-medium text-gray-700">Subscription Plan</label>
+                            <select id="home-subscription-plan" name="subscription-plan" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white">
+                                <option>Only One time</option>
+                                <option>Per Month</option>
+                                <option>3 month (subscription)</option>
+                                <option>6 month (subscription)</option>
+                                <option>12 months (subscription)</option>
+                            </select>
+                        </div>
+                        <div class="mt-6 text-center bg-slate-50 p-4 rounded-lg">
+                            <p class="text-lg text-gray-600">Estimated Price:</p>
+                            <p id="home-total-price-display" class="text-3xl font-bold text-blue-600">₹0</p>
+                        </div>
+                        <div>
+                           <a href="#appointment" class="w-full block text-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 page-link appointment-button" data-service="Car Wash (Both)">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page Section -->
+        <section id="about" class="page-section">
+            <div class="container mx-auto px-6 py-16">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold">About EcoShine Services</h2>
+                    <p class="mt-4 text-lg text-gray-600">Your Trusted Partner in Eco-Friendly Cleaning</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="./images/logo/logo.png" alt="EcoShine Team" class="rounded-lg shadow-xl">
+                    </div>
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-gray-800">Our Mission</h3>
+                        <p class="text-gray-600 leading-relaxed">At EcoShine, our mission is simple: to provide exceptional, convenient, and environmentally responsible cleaning services. We believe that a clean environment contributes to a better quality of life, and we're dedicated to delivering spotless results while protecting our planet.</p>
+                        <h3 class="text-2xl font-bold text-gray-800">Our Values</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><strong class="font-semibold">Customer Satisfaction:</strong> Your happiness is our top priority. We go the extra mile to ensure you're delighted with our service.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><strong class="font-semibold">Eco-Friendly Practices:</strong> We use biodegradable cleaning solutions and water-saving techniques to minimize our environmental impact.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><strong class="font-semibold">Reliability & Professionalism:</strong> Our trained and uniformed team is always on time, courteous, and ready to deliver outstanding results.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page Section -->
+        <section id="services" class="page-section">
+            <div class="container mx-auto px-6 py-16">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold">Our Comprehensive Services</h2>
+                    <p class="mt-4 text-lg text-gray-600">Tailored cleaning solutions for your specific needs.</p>
+                </div>
+                
+                <!-- Service Cards -->
+                <div class="mt-12 space-y-12">
+                    <!-- Solar Panel Cleaning -->
+                    <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-lg shadow-md">
+                        <img src="https://sowashusa.com/images/ending2.jpg" alt="Solar Panel Cleaning" class="rounded-lg w-full object-cover h-[350px]">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3">Solar Panel Cleaning</h3>
+                            <p class="text-gray-600 mb-4">Dust, grime, and bird droppings can reduce your solar panels' efficiency by up to 30%. Our specialized cleaning process uses purified water and soft brushes to safely remove all debris, maximizing your system's power output and protecting your investment.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Increases energy production</li>
+                                <li>Prevents panel damage</li>
+                                <li>Eco-friendly, chemical-free cleaning</li>
+                                <li>Fully trained and insured technicians</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Car Wash -->
+                    <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-lg shadow-md">
+                        <div class="md:order-2">
+                            <img src="https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt1f80d65f29f2bb64/658d964190dcf210246468ec/PN1305_HowOftenWashCar_Tile.jpg" alt="Car Wash" class="rounded-lg w-full object-cover h-[350px]">
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="text-2xl font-bold mb-3">Doorstep Car Wash</h3>
+                            <p class="text-gray-600 mb-4">Skip the queue and enjoy a premium car wash at your convenience. We provide a meticulous interior and exterior cleaning service using high-quality, gentle products that leave your car sparkling and protected.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Exterior wash and wax</li>
+                                <li>Interior vacuuming and dashboard polishing</li>
+                                <li>Tire and rim cleaning</li>
+                                <li>Convenient and time-saving</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Water Tank Cleaning -->
+                    <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-lg shadow-md">
+                        <img src="https://mywatertankcleaning.com/wp-content/uploads/2024/07/building-water-tank-cleaning-services-1024x682.jpg" alt="Water Tank Cleaning" class="rounded-lg w-full object-cover h-[350px]">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3">Hygienic Water Tank Cleaning</h3>
+                            <p class="text-gray-600 mb-4">Clean water is essential for your family's health. Our multi-stage cleaning process removes sludge, sediment, algae, and harmful bacteria from your water tank, ensuring you have a safe and clean water supply.</p>
+                             <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Mechanized dewatering</li>
+                                <li>Sludge removal and high-pressure cleaning</li>
+                                <li>Anti-bacterial spray treatment</li>
+                                <li>Safe for all types of tanks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subscription Plans Section -->
+                <div class="mt-20">
+                    <div class="text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold">EcoShine Subscription Plans</h2>
+                        <p class="mt-4 text-lg text-gray-600">Choose a plan that fits your needs and enjoy consistent, high-quality service while saving money. The longer you subscribe, the more you save!</p>
+                    </div>
+
+                    <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <!-- Complete Vehicle Cleaning Plan -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500 lg:col-span-2">
+                            <h3 class="text-2xl font-bold mb-4 text-center">🚗 Complete Vehicle Cleaning</h3>
+                            <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                                <!-- Exterior -->
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-2 text-gray-800">Exterior Wash</h4>
+                                    <ul class="space-y-3 text-gray-700">
+                                        <li class="flex justify-between border-b pb-2"><span>One-Time:</span> <span class="font-semibold">₹250</span></li>
+                                        <li class="flex justify-between border-b pb-2"><span>Monthly:</span> <span class="font-semibold">₹200 /mo</span></li>
+                                        <li class="flex justify-between border-b pb-2"><span>Quarterly:</span> <span class="font-semibold">₹170 /mo</span></li>
+                                        <li class="flex justify-between border-b pb-2"><span>Semi-Annual:</span> <span class="font-semibold">₹140 /mo</span></li>
+                                        <li class="flex justify-between"><span>Annual:</span> <span class="font-semibold">₹120 /mo</span></li>
+                                    </ul>
+                                </div>
+                                <!-- Interior -->
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-2 text-gray-800">Interior Cleaning</h4>
+                                    <ul class="space-y-3 text-gray-700">
+                                        <li class="flex justify-between border-b pb-2"><span>One-Time:</span> <span class="font-semibold">₹100</span></li>
+                                        <li class="flex justify-between border-b pb-2"><span>Monthly:</span> <span class="font-semibold">₹80 /mo</span></li>
+                                        <li class="flex justify-between border-b pb-2"><span>Quarterly:</span> <span class="font-semibold">₹70 /mo</span></li>
+                                        <li class="flex justify-between border-b pb-2"><span>Semi-Annual:</span> <span class="font-semibold">₹60 /mo</span></li>
+                                        <li class="flex justify-between"><span>Annual:</span> <span class="font-semibold">₹50 /mo</span></li>
+                                    </ul>
+                                </div>
+                                <!-- Full Service -->
+                                <div class="md:col-span-2 mt-4 bg-amber-100 p-4 rounded-lg">
+                                    <h4 class="text-xl font-semibold mb-2 text-center text-amber-800">Full Service (Exterior + Interior)</h4>
+                                     <ul class="space-y-3 text-amber-900">
+                                        <li class="flex justify-between border-b border-amber-300 pb-2"><span>One-Time:</span> <span class="font-bold">₹320</span></li>
+                                        <li class="flex justify-between border-b border-amber-300 pb-2"><span>Monthly:</span> <span class="font-bold">₹250 /mo</span></li>
+                                        <li class="flex justify-between border-b border-amber-300 pb-2"><span>Quarterly:</span> <span class="font-bold">₹210 /mo</span></li>
+                                        <li class="flex justify-between border-b border-amber-300 pb-2"><span>Semi-Annual:</span> <span class="font-bold">₹180 /mo</span></li>
+                                        <li class="flex justify-between"><span>Annual (Best Value!):</span> <span class="font-bold">₹150 /mo</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <a href="#appointment" class="mt-6 block w-full bg-blue-600 text-white text-center font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 page-link appointment-button" data-service="Car Wash (Both)">Book Appointment</a>
+                        </div>
+
+                        <!-- Bike Wash Plan -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-500 flex flex-col">
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 text-center">🏍️ Bike Wash Plan</h3>
+                                <p class="text-gray-600 text-center mb-4">Perfect for daily commuters and weekend riders.</p>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex justify-between border-b pb-2"><span>One-Time Wash:</span> <span class="font-semibold">₹50</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Monthly:</span> <span class="font-semibold">₹45 /mo</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Quarterly (3 Mo):</span> <span class="font-semibold">₹40 /mo</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Semi-Annual (6 Mo):</span> <span class="font-semibold">₹35 /mo</span></li>
+                                    <li class="flex justify-between bg-amber-100 p-2 rounded-md"><span>Annual (12 Mo):</span> <span class="font-bold text-amber-600">₹30 /mo (Best Value!)</span></li>
+                                </ul>
+                            </div>
+                            <a href="#appointment" class="mt-6 block w-full bg-green-600 text-white text-center font-semibold px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300 page-link appointment-button" data-service="Bike Wash">Book Appointment</a>
+                        </div>
+                        
+                        <!-- Water Tank Cleaning Plan -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-cyan-500 flex flex-col">
+                           <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 text-center">💧 Water Tank Cleaning</h3>
+                                <p class="text-gray-600 text-center mb-4">Per 1000 Liters. Ensure clean, hygienic water.</p>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex justify-between border-b pb-2"><span>One-Time Service:</span> <span class="font-semibold">₹250</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Monthly:</span> <span class="font-semibold">₹230 /mo</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Quarterly (3 Mo):</span> <span class="font-semibold">₹200 /mo</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Semi-Annual (6 Mo):</span> <span class="font-semibold">₹150 /mo</span></li>
+                                    <li class="flex justify-between bg-amber-100 p-2 rounded-md"><span>Annual (12 Mo):</span> <span class="font-bold text-amber-600">₹100 /mo (Best Value!)</span></li>
+                                </ul>
+                           </div>
+                            <a href="#appointment" class="mt-6 block w-full bg-cyan-600 text-white text-center font-semibold px-6 py-3 rounded-lg hover:bg-cyan-700 transition duration-300 page-link appointment-button" data-service="Water Tank Cleaning">Book Appointment</a>
+                        </div>
+
+                        <!-- Panel Cleaning Plan -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500 lg:col-span-2 flex flex-col">
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 text-center">☀️ Panel Cleaning Plan</h3>
+                                <p class="text-gray-600 text-center mb-4">Ideal for solar panels or other exterior panels.</p>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex justify-between border-b pb-2"><span>One-Time Service:</span> <span class="font-semibold">₹30 /panel</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Monthly:</span> <span class="font-semibold">₹25 /panel/mo</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Quarterly (3 Mo):</span> <span class="font-semibold">₹20 /panel/mo</span></li>
+                                    <li class="flex justify-between border-b pb-2"><span>Semi-Annual (6 Mo):</span> <span class="font-semibold">₹18 /panel/mo</span></li>
+                                    <li class="flex justify-between bg-amber-100 p-2 rounded-md"><span>Annual (12 Mo):</span> <span class="font-bold text-amber-600">₹15 /panel/mo (Best Value!)</span></li>
+                                </ul>
+                            </div>
+                            <a href="#appointment" class="mt-6 block w-full bg-yellow-500 text-white text-center font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition duration-300 page-link appointment-button" data-service="Solar Panel Cleaning">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Feedback Section -->
+                <div class="mt-20">
+                    <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600 italic">"My solar panels have never been more efficient! EcoShine did a fantastic job, professional and on time. Highly recommend their service."</p>
+                            <div class="flex items-center mt-4">
+                                <img src="https://placehold.co/40x40/cbd5e1/475569?text=A" class="rounded-full mr-3" alt="Avatar">
+                                <div>
+                                    <p class="font-bold">Anjali P.</p>
+                                    <p class="text-sm text-gray-500">Homeowner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600 italic">"The doorstep car wash is a game-changer. My car looks brand new, and I didn't have to waste my Sunday at a service station. Excellent work!"</p>
+                            <div class="flex items-center mt-4">
+                                <img src="https://placehold.co/40x40/cbd5e1/475569?text=R" class="rounded-full mr-3" alt="Avatar">
+                                <div>
+                                    <p class="font-bold">Rohan S.</p>
+                                    <p class="text-sm text-gray-500">Car Enthusiast</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600 italic">"I was worried about the quality of our tank water. After EcoShine's service, I have peace of mind. The process was thorough and very professional."</p>
+                            <div class="flex items-center mt-4">
+                                <img src="https://placehold.co/40x40/cbd5e1/475569?text=S" class="rounded-full mr-3" alt="Avatar">
+                                <div>
+                                    <p class="font-bold">Sunita M.</p>
+                                    <p class="text-sm text-gray-500">Apartment Resident</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Page Section -->
+        <section id="appointment" class="page-section">
+             <div class="container mx-auto px-6 py-16">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold">Book Your Appointment</h2>
+                    <p class="mt-4 text-lg text-gray-600">Fill out the form below and we'll get in touch to confirm your booking.</p>
+                </div>
+                <div class="mt-12 max-w-2xl mx-auto">
+                    <form action="https://formspree.io/f/mqaldpnz" method="POST" class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+                        <h3 class="text-2xl font-bold">Booking Details</h3>
+                        <div>
+                            <label for="appointment-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="name" id="appointment-name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="appointment-mobile" class="block text-sm font-medium text-gray-700">Mobile No.</label>
+                            <input type="tel" name="mobile" id="appointment-mobile" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                         <div>
+                            <label for="appointment-email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" name="email" id="appointment-email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="appointment-address" class="block text-sm font-medium text-gray-700">Full Address</label>
+                            <textarea id="appointment-address" name="address" rows="3" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <div>
+                            <label for="appointment-service" class="block text-sm font-medium text-gray-700">Select Service</label>
+                            <select id="appointment-service" name="service" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white">
+                                <option>Car Wash (Exterior)</option>
+                                <option>Car Wash (Interior)</option>
+                                <option>Car Wash (Both)</option>
+                                <option>Bike Wash</option>
+                                <option>Solar Panel Cleaning</option>
+                                <option>Water Tank Cleaning</option>
+                            </select>
+                        </div>
+                        <div id="panel-quantity-section" class="hidden">
+                            <label for="panel-quantity" class="block text-sm font-medium text-gray-700">Number of Panels</label>
+                            <input type="number" name="panel-quantity" id="panel-quantity" min="1" value="1" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                         <div id="tank-capacity-section" class="hidden">
+                            <label for="tank-capacity" class="block text-sm font-medium text-gray-700">Water Tank Capacity (in Liters)</label>
+                            <input type="number" name="tank-capacity" id="tank-capacity" min="500" value="1000" step="100" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="subscription-plan" class="block text-sm font-medium text-gray-700">Subscription Plan</label>
+                            <select id="subscription-plan" name="subscription-plan" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white">
+                                <option>Only One time</option>
+                                <option>Per Month</option>
+                                <option>3 month (subscription)</option>
+                                <option>6 month (subscription)</option>
+                                <option>12 months (subscription)</option>
+                            </select>
+                        </div>
+                        <div class="mt-6 text-center bg-slate-50 p-4 rounded-lg">
+                            <p class="text-lg text-gray-600">Estimated Price:</p>
+                            <p id="total-price-display" class="text-3xl font-bold text-blue-600">₹0</p>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Confirm Booking</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page Section -->
+        <section id="contact" class="page-section">
+            <div class="container mx-auto px-6 py-16">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold">Get in Touch</h2>
+                    <p class="mt-4 text-lg text-gray-600">Have a question? We're here to help. Contact us for a free, no-obligation quote.</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <form action="https://formspree.io/f/mqaldpnz" method="POST" class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+                        <h3 class="text-2xl font-bold">Send us a Message</h3>
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                         <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700">Service of Interest</label>
+                            <select id="service" name="service" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white">
+                                <option>Solar Panel Cleaning</option>
+                                <option>Doorstep Car Wash</option>
+                                <option>Water Tank Cleaning</option>
+                                <option>Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Submit Inquiry</button>
+                        </div>
+                    </form>
+                    <!-- Contact Info -->
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                             <div class="space-y-4 text-gray-700">
+                                <p class="flex items-start"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-blue-600 flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg> <span>Sarvashree Nagar, Dighori, Nagpur 44003</span></p>
+                                <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-blue-600" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.024 11.024 0 006.29 6.29l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg> +91 9028546799</p>
+                                <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-blue-600" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.76a11.024 11.024 0 006.29 6.29l.76-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg> +91 7775046467</p>
+                                <p class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-blue-600" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg> contact.ecoshineservices@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden h-64 md:h-auto">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.55734898628!2d79.0814932!3d21.161066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1722520353088!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <img src="./images/logo/logo.png" alt="Ecoshine Services Logo" class="h-12 w-auto mb-4">
+                    <p class="text-gray-400">Your trusted partner for professional, eco-friendly cleaning services right at your doorstep.</p>
+                </div>
+                <div class="md:col-span-2 flex flex-col md:flex-row md:items-start md:justify-between space-y-8 md:space-y-0 md:space-x-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white page-link">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white page-link">About Us</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white page-link">Services</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white page-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                        <p class="text-gray-400 mb-2">For inquiries, please reach out to us:</p>
+                        <p class="text-gray-400">Email: contact.ecoshineservices@gmail.com</p>
+                        <p class="text-gray-400">Phone: +91 9028546799 , +91 7775046467</p>
+                        <p class="text-gray-400">Address: Sarvashree Nagar, Dighori, Nagpur 44003</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.582 0 0 .582 0 1.325v21.351C0 23.418.582 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.742 0 1.325-.582 1.325-1.325V1.325C24 .582 23.418 0 22.675 0z" /></svg></a>
+                            <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.626c-3.264 0-3.652.012-4.929.07-2.828.128-4.017 1.312-4.145 4.145-.058 1.277-.07 1.652-.07 4.929s.012 3.652.07 4.929c.128 2.833 1.317 4.017 4.145 4.145 1.277.058 1.665.07 4.929.07s3.652-.012 4.929-.07c2.828-.128 4.017-1.312 4.145-4.145.058-1.277.07-1.652.07-4.929s-.012-3.652-.07-4.929c-.128-2.833-1.317-4.017-4.145-4.145-1.277-.058-1.665-.07-4.929-.07zm0 3.888c-2.652 0-4.801 2.149-4.801 4.801s2.149 4.801 4.801 4.801 4.801-2.149 4.801-4.801-2.149-4.801-4.801-4.801zm0 7.979c-1.753 0-3.178-1.425-3.178-3.178s1.425-3.178 3.178-3.178 3.178 1.425 3.178 3.178-1.425 3.178-3.178 3.178zm6.362-7.332c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5z" /></svg></a>
+                            <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085c.645 1.956 2.52 3.379 4.738 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.058 0 14.01-7.502 14.01-14.01 0-.213 0-.425-.015-.636A10.03 10.03 0 0024 4.59z" /></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EcoShine Services. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- All Element Selections ---
+            const pageLinks = document.querySelectorAll('.page-link');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const appointmentButtons = document.querySelectorAll('.appointment-button');
+
+            // Appointment Form Elements
+            const appointmentServiceSelect = document.getElementById('appointment-service');
+            const subscriptionPlanSelect = document.getElementById('subscription-plan');
+            const totalPriceDisplay = document.getElementById('total-price-display');
+            const panelQuantitySection = document.getElementById('panel-quantity-section');
+            const panelQuantityInput = document.getElementById('panel-quantity');
+            const tankCapacitySection = document.getElementById('tank-capacity-section');
+            const tankCapacityInput = document.getElementById('tank-capacity');
+
+            // Home Page Quick Quote Elements
+            const homeServiceSelect = document.getElementById('home-appointment-service');
+            const homeSubscriptionSelect = document.getElementById('home-subscription-plan');
+            const homePriceDisplay = document.getElementById('home-total-price-display');
+            const homePanelSection = document.getElementById('home-panel-quantity-section');
+            const homePanelInput = document.getElementById('home-panel-quantity');
+            const homeTankSection = document.getElementById('home-tank-capacity-section');
+            const homeTankInput = document.getElementById('home-tank-capacity');
+
+            const pricing = {
+                'Car Wash (Exterior)': { 'Only One time': 250, 'Per Month': 200, '3 month (subscription)': 170, '6 month (subscription)': 140, '12 months (subscription)': 120 },
+                'Car Wash (Interior)': { 'Only One time': 100, 'Per Month': 80, '3 month (subscription)': 70, '6 month (subscription)': 60, '12 months (subscription)': 50 },
+                'Car Wash (Both)': { 'Only One time': 320, 'Per Month': 250, '3 month (subscription)': 210, '6 month (subscription)': 180, '12 months (subscription)': 150 },
+                'Bike Wash': { 'Only One time': 50, 'Per Month': 45, '3 month (subscription)': 40, '6 month (subscription)': 35, '12 months (subscription)': 30 },
+                'Solar Panel Cleaning': { 'Only One time': 30, 'Per Month': 25, '3 month (subscription)': 20, '6 month (subscription)': 18, '12 months (subscription)': 15 },
+                'Water Tank Cleaning': { 'Only One time': 250, 'Per Month': 230, '3 month (subscription)': 200, '6 month (subscription)': 150, '12 months (subscription)': 100 }
+            };
+            
+            const monthMultipliers = {
+                'Only One time': 1,
+                'Per Month': 1,
+                '3 month (subscription)': 3,
+                '6 month (subscription)': 6,
+                '12 months (subscription)': 12
+            };
+
+            // --- Generic Price Calculation Function ---
+            function calculatePrice(serviceEl, planEl, panelSectionEl, panelInputEl, tankSectionEl, tankInputEl, displayEl) {
+                const selectedService = serviceEl.value;
+                const selectedPlan = planEl.value;
+                let pricePerMonth = 0;
+                
+                if (selectedService === 'Solar Panel Cleaning') {
+                    panelSectionEl.classList.remove('hidden');
+                    tankSectionEl.classList.add('hidden');
+                } else if (selectedService === 'Water Tank Cleaning') {
+                    panelSectionEl.classList.add('hidden');
+                    tankSectionEl.classList.remove('hidden');
+                } else {
+                    panelSectionEl.classList.add('hidden');
+                    tankSectionEl.classList.add('hidden');
+                }
+
+                if (pricing[selectedService] && pricing[selectedService][selectedPlan]) {
+                    pricePerMonth = pricing[selectedService][selectedPlan];
+                }
+
+                let quantity = 1;
+                if (selectedService === 'Solar Panel Cleaning') {
+                    quantity = parseInt(panelInputEl.value) || 1;
+                } else if (selectedService === 'Water Tank Cleaning') {
+                    const capacity = parseInt(tankInputEl.value) || 1000;
+                    quantity = capacity / 1000;
+                }
+
+                const months = monthMultipliers[selectedPlan] || 1;
+                const totalPrice = pricePerMonth * quantity * months;
+
+                displayEl.textContent = `₹${totalPrice}`;
+            }
+
+            // --- Event Listeners for Appointment Form ---
+            appointmentServiceSelect.addEventListener('change', () => calculatePrice(appointmentServiceSelect, subscriptionPlanSelect, panelQuantitySection, panelQuantityInput, tankCapacitySection, tankCapacityInput, totalPriceDisplay));
+            subscriptionPlanSelect.addEventListener('change', () => calculatePrice(appointmentServiceSelect, subscriptionPlanSelect, panelQuantitySection, panelQuantityInput, tankCapacitySection, tankCapacityInput, totalPriceDisplay));
+            panelQuantityInput.addEventListener('input', () => calculatePrice(appointmentServiceSelect, subscriptionPlanSelect, panelQuantitySection, panelQuantityInput, tankCapacitySection, tankCapacityInput, totalPriceDisplay));
+            tankCapacityInput.addEventListener('input', () => calculatePrice(appointmentServiceSelect, subscriptionPlanSelect, panelQuantitySection, panelQuantityInput, tankCapacitySection, tankCapacityInput, totalPriceDisplay));
+
+            // --- Event Listeners for Home Page Quick Quote ---
+            homeServiceSelect.addEventListener('change', () => calculatePrice(homeServiceSelect, homeSubscriptionSelect, homePanelSection, homePanelInput, homeTankSection, homeTankInput, homePriceDisplay));
+            homeSubscriptionSelect.addEventListener('change', () => calculatePrice(homeServiceSelect, homeSubscriptionSelect, homePanelSection, homePanelInput, homeTankSection, homeTankInput, homePriceDisplay));
+            homePanelInput.addEventListener('input', () => calculatePrice(homeServiceSelect, homeSubscriptionSelect, homePanelSection, homePanelInput, homeTankSection, homeTankInput, homePriceDisplay));
+            homeTankInput.addEventListener('input', () => calculatePrice(homeServiceSelect, homeSubscriptionSelect, homePanelSection, homePanelInput, homeTankSection, homeTankInput, homePriceDisplay));
+
+            // --- Page Navigation Logic ---
+            const showPage = (pageId) => {
+                pageSections.forEach(section => section.classList.remove('active'));
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) targetPage.classList.add('active');
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${pageId}`) link.classList.add('active');
+                });
+
+                mobileMenu.classList.add('hidden');
+                window.scrollTo(0, 0);
+
+                // Initial calculation on page show
+                if (pageId === 'appointment') calculatePrice(appointmentServiceSelect, subscriptionPlanSelect, panelQuantitySection, panelQuantityInput, tankCapacitySection, tankCapacityInput, totalPriceDisplay);
+                if (pageId === 'home') calculatePrice(homeServiceSelect, homeSubscriptionSelect, homePanelSection, homePanelInput, homeTankSection, homeTankInput, homePriceDisplay);
+            };
+
+            pageLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = link.getAttribute('href').substring(1);
+                    showPage(pageId);
+                    history.pushState(null, null, `#${pageId}`);
+                });
+            });
+            
+            appointmentButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const service = e.currentTarget.getAttribute('data-service');
+                    if (service && appointmentServiceSelect) {
+                        appointmentServiceSelect.value = service;
+                    }
+                });
+            });
+
+            mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+            window.addEventListener('popstate', () => showPage(window.location.hash.substring(1) || 'home'));
+
+            showPage(window.location.hash.substring(1) || 'home');
+        });
+    </script>
+
+</body>
+</html>
